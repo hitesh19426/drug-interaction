@@ -1,0 +1,211 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myhomepage">
+        <div id="myDIV" class="header">
+            <h2 class="myheading">My Drug List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+            <!-- <li>Dolutegravir</li>
+            <li>Apixaban</li>
+            <li>Selexipag</li> -->
+
+            <li>Fentanyl</li>
+            <li>Midazolam</li>
+            <li>Vancomycin</li>
+            <li>Meropenem</li>
+            <li>Chlorhexidine</li>
+            <li>Ceftriaxone</li>
+            <li>Dobutamine</li>
+            <li>Milrinone</li>
+            <li>Azithromycin</li>
+            <li>Phenytoin</li>
+            <li>Amikacin</li>
+            <li>Caspofungin</li>
+            <li>Pantoprazole</li>
+            <li>Voriconazole</li>
+            <li>Digoxin</li>
+            <li>Fluconazole</li>
+            <li>Cefoperazone</li>
+            <li>Enoxaparin</li>
+            <li>Piperacillin</li>
+            <li>Dopamine</li>
+            <li>Salbutamol</li>
+            <li>Furosemide</li>
+            <li>Amlodipine</li>
+            <li>Linezolid</li>
+            <li>Hydrocortisone</li>
+            <li>Tigecycline</li>
+            <li>Levofloxacin</li>
+            <li>Dexamethasone</li>
+            <li>Imipenem</li>
+            <li>Calcium gluconate</li>
+            <li>Clonidine</li>
+            <li>Vecuronium</li>
+            <li>Lactulose</li>
+            <li>Clindamycin</li>
+            <li>Ethambutol</li>
+            <li>Folic acid</li>
+            <!-- <li>Metoprolol</li>
+            <li>Sildenafil</li>
+            <li>Acyclovir</li>
+            <li>Labetalol</li>
+            <li>Metronidazole</li>
+            <li>Ciprofloxacin</li>
+            <li>Trimethoprim</li>
+            <li>Pyridoxine</li>
+            <li>Vitamin D</li>
+            <li>Vasopressin</li>
+            <li>Morphine</li>
+            <li>Metoclopramide</li>
+            <li>Heparin</li>
+            <li>Ceftazidime</li>
+            <li>Cefotaxime</li>
+            <li>Pyrazinamide</li>
+            <li>Baclofen</li>
+            <li>Doxycycline</li>
+            <li>Ondansetron</li>
+            <li>Erythromycin</li>
+            <li>Tizanidine</li>
+            <li>Lorazepam</li>
+            <li>Cefepime</li>
+            <li>Tobramycin</li>
+            <li>Iron</li>
+            <li>Ketamine</li>
+            <li>Moxifloxacin</li>
+            <li>Ofloxacin</li>
+            <li>Prazosin</li>
+            <li>Prednisolone</li>
+            <li>Spironolactone</li>
+            <li>Rifaximin</li>
+            <li>Octreotide</li>
+            <li>Enalapril</li>
+            <li>Ethionamide</li>
+            <li>Tranexamic acid</li>
+            <li>Clotrimazole</li>
+            <li>Rifampicin</li>
+            <li>Ipratropium</li>
+            <li>Allopurinol</li>
+            <li>Clonazepam</li>
+            <li>Oseltamivir</li>
+            <li>Isoniazid</li>
+            <li>Calcitriol</li>
+            <li>Aztreonam</li>
+            <li>Betamethasone</li>
+            <li>Mupirocin</li>
+            <li>Topiramate</li>
+            <li>Methotrexate</li>
+            <li>Budesonide</li>
+            <li>Acetazolamide</li>
+            <li>Haloperidol</li>
+            <li>Methylprednisolone</li>
+            <li>Amiodarone</li>
+            <li>Cholecalciferol</li>
+            <li>Loperamide</li>
+            <li>Etoposide</li>
+            <li>Diazepam</li>
+            <li>Kanamycin</li>
+            <li>Leucovorin</li>
+            <li>Phenylephrine</li>
+            <li>Posaconazole</li>
+            <li>Lidocaine</li>
+            <li>Diazoxide</li>
+            <li>Carbamazepine</li>
+            <li>Ganciclovir</li>
+            <li>Gabapentin</li>
+            <li>Amphotericin B</li>
+            <li>Fludrocortisone</li>
+            <li>Cyclosporine</li>
+            <li>Alprazolam</li>
+            <li>Aminophylline</li>
+            <li>Primaquine</li>
+            <li>Cyclophosphamide</li>
+            <li>Sucralfate</li>
+            <li>Hydroxyurea</li>
+            <li>Glycerin</li>
+            <li>Artesunate</li>
+            <li>Streptomycin</li>
+            <li>Ivermectin</li>
+            <li>Phenoxybenzamine</li>
+            <li>Valganciclovir</li>
+            <li>Cefpodoxime</li>
+            <li>Nitroglycerin</li>
+            <li>Mannitol</li>
+            <li>Febuxostat</li>
+            <li>Vitamin A</li>
+            <li>Oxygen</li>
+            <li>Artemether</li>
+            <li>Magnesium sulfate</li>
+            <li>Norepinephrine</li>
+            <li>Amoxicillin</li>
+            <li>Sodium bicarbonate</li>
+            <li>Gentamicin</li>
+            <li>Zinc sulfate</li>
+            <li>Efavirenz</li>
+            <li>Tramadol</li>
+            <li>Ranitidine</li>
+            <li>Levosalbutamol</li>
+            <li>Cefazolin</li>
+            <li>Abacavir</li>
+            <li>Tropicamide</li>
+            <li>Clobazam</li>
+            <li>Cycloserine</li>
+            <li>Vitamin E</li>
+            <li>Topotecan</li>
+            <li>Atracurium</li>
+            <li>Desmopressin</li>
+            <li>Ifosfamide</li>
+            <li>Rasburicase</li>
+            <li>Lamotrigine</li>
+            <li>Epinephrine</li>
+            <li>Etomidate</li>
+            <li>Bleomycin</li>
+            <li>Formoterol</li>
+            <li>Flucytosine</li>
+            <li>Melatonin</li>
+            <li>Atropine</li>
+            <li>Bosentan</li>
+            <li>Propranolol</li>
+            <li>Minoxidil</li>
+            <li>Cisplatin</li>
+            <li>Penicillamine</li>
+            <li>Sirolimus</li>
+            <li>Levetiracetam</li>
+            <li>Rocuronium</li>
+            <li>Diltiazem</li>
+            <li>Hydrochlorothiazide</li> -->
+
+        </ul>
+
+        <div class="mybtn">
+            <button onclick="submitList()"> Submit the list </button>
+        </div>
+
+        <table id="drugtable">
+
+        </table>
+
+        <div id="notediv" class="notediv">
+            
+        </div>
+    </div>
+    {% csrf_token %}
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
