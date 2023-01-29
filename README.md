@@ -3,10 +3,11 @@
 - pip
 
 ## How to install:
-- Clone this repo
+- Clone this repo using `git clone https://github.com/hitesh19426/drug-interaction`
 - Go to drug-interaction directory (main folder).
 - Use `pip install -r requirements.txt` to install all the required packages
 - To run the server `python manage.py runserver`
+- Go to the link of the development server mentioned in the terminal. By default, it should be `localhost:8000`
 
 ## How to use:
 - Enter the names of drugs (Ex: Fentanyl, Midazolam, Vancomycin) in the ipnut field and add them one by one.
