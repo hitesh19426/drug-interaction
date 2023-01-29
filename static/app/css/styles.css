@@ -160,6 +160,7 @@ input {
   display: block;
   margin: 20px auto;
   width: 20%;
+  text-align: center;
 }
 
 button {
@@ -215,4 +216,11 @@ button {
 
 .mydiv {
   color: #6a6969;
+}
+
+#loadingdiv{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #5a5a5a;
+  text-align: center;
 }

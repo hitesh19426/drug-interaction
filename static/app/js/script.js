@@ -54,6 +54,16 @@ function newElement() {
   }
 }
 
+function addLoading(){
+  var loadingdiv = document.getElementById("loadingdiv");
+  loadingdiv.innerHTML = "<b> Loading... </b>"
+}
+
+function deleteLoading(){
+  var loadingdiv = document.getElementById("loadingdiv");
+  loadingdiv.innerHTML = ""
+}
+
 function updatetable(druglist){
     var mytable = document.getElementById("drugtable");
     
@@ -83,6 +93,8 @@ function updatetable(druglist){
         cell2.innerHTML = drug["drug2"];
         cell3.innerHTML = drug["level"]
     });
+
+    deleteLoading();
 }
 
 function addNote(count){
@@ -103,6 +115,7 @@ async function submitList(){
     }
     console.log(drugs);
 
+    addLoading();
     var response = await fetch('http://127.0.0.1:8000/home/', {
         method: 'POST',
         headers: {
