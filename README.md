@@ -1,11 +1,19 @@
 ## Requirments:
-- python
+- python3 (Please don't use python version < 3)
 - pip
 
-## How to install:
+## How to install (Windows):
 - Clone this repo using `git clone https://github.com/hitesh19426/drug-interaction`
 - Go to drug-interaction directory (main folder).
 - Use `pip install -r requirements.txt` to install all the required packages
+- To run the server `python manage.py runserver`
+- Go to the link of the development server mentioned in the terminal. By default, it should be `localhost:8000`
+
+## How to install (Ubuntu):
+- Clone this repo using `git clone https://github.com/hitesh19426/drug-interaction`
+- Go to drug-interaction directory (main folder).
+- Use command `pip install django` to install django
+- Use command `sudo apt-get install python3-psycopg2` to install psycopg2
 - To run the server `python manage.py runserver`
 - Go to the link of the development server mentioned in the terminal. By default, it should be `localhost:8000`
 
