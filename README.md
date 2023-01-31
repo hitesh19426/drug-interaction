@@ -27,10 +27,10 @@
 - The entered drug names should exactly match with names in database. It basically means that the name should be correct with first letter capital.
 
 ## Example to view all interactions:
-Aluminum hydroxide
-Dolutegravir
-Aprepitant
-Abacavir
-Orlistat
-Calcium acetate
-Dexamethasone
+- Aluminum hydroxide
+- Dolutegravir
+- Aprepitant
+- Abacavir
+- Orlistat
+- Calcium acetate
+- Dexamethasone
