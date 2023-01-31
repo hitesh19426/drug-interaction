@@ -25,3 +25,12 @@
 ## Note:
 - It might take some time to fetch the interactions from the database since the database is hosted online. So please be patient. We are working on improving the time of query.
 - The entered drug names should exactly match with names in database. It basically means that the name should be correct with first letter capital.
+
+## Example to view all interactions:
+Aluminum hydroxide
+Dolutegravir
+Aprepitant
+Abacavir
+Orlistat
+Calcium acetate
+Dexamethasone
